@@ -20,7 +20,7 @@ class AddExtraColToEmployersTable extends Migration
             $table->bigInteger('classification_id')->unsigned()->nullable();
             $table->foreign('classification_id')->references('id')->on('classifications')->onDelete('cascade');
             $table->string('detailed_address', 64)->nullable();
-            $table->string('website', 64)->nullable();
+            $table->string('website', 128)->nullable();
             $table->string('phone_number', 64)->nullable();
             $table->string('company_logo', 512)->nullable();
         });

@@ -1,5 +1,5 @@
 import Vue from "vue";
-import LogoInput from "./components/employers/logoInput.vue";
+import LogoInput from "./components/employers/LogoInput.vue";
 
 new Vue({
     el: "#logoInput",
