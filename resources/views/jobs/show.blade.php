@@ -23,11 +23,11 @@
                     @if(Auth::check() && !Auth::user()->is_employer)
                         <div class="card-footer text-muted">
                             @if (!Auth::user()->employee->hasAppliedJobs($job))
-                                <a type="button" class="btn btn-apply" 
+                                <a role="button" class="btn btn-apply" 
                                     href="{{ route('employees.applications.create', ['job' => $job]) }}" style="width:110px">
                                     <i class="fa fa-paper-plane"></i>Apply</a>
                             @else
-                                <a type="button" class="btn btn-secondary disabled" href="{{ route('employees.applications.create', ['job' => $job]) }}" style="width:110px">
+                                <a role="button" class="btn btn-secondary disabled" href="{{ route('employees.applications.create', ['job' => $job]) }}" style="width:110px">
                                     <i class="fa fa-paper-plane"></i>Applied</a>
                             @endif
                             @if(!Auth::user()->hasSavedJobs($job))

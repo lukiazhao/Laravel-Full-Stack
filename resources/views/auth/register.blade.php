@@ -77,7 +77,7 @@
                         </div>
 
                         <div class="row justify-content-md-center">
-                            <a type="button" href="{{ route('login.linkedin') }}" class="btn btn-apply"><span style="font-size:18px"><i class="fab fa-linkedin"></i>Sign in with LinkedIn</span></a>
+                            <a role="button" href="{{ route('login.linkedin') }}" class="btn btn-apply"><span style="font-size:18px"><i class="fab fa-linkedin"></i>Sign in with LinkedIn</span></a>
                         </div>
                     </form>
                 </div>
